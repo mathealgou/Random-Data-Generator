@@ -88,10 +88,10 @@ function generateEmail(){
     let nouns = require("../lists/nouns.json")
     let providers = require("../lists/emailProviders.json")
     let domains = require("../lists/domains.json")
-    let word1 = adjectives[getRandomNumber(0, adjectives.length)]
-    let word2 = nouns[getRandomNumber(0, nouns.length)]
-    let word3 = providers[getRandomNumber(0, providers.length)]
-    let word4 = domains[getRandomNumber(0, domains.length)]
+    let word1 = adjectives[getRandomNumber(0, adjectives.length - 1)]
+    let word2 = nouns[getRandomNumber(0, nouns.length - 1)]
+    let word3 = providers[getRandomNumber(0, providers.length - 1)]
+    let word4 = domains[getRandomNumber(0, domains.length - 1)]
 
     return `${word1}.${word2}@${word3}${word4}`
 }
