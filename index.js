@@ -22,3 +22,4 @@ console.log(generators.generatePhoneDDI())
 //UUID
 console.log(generators.generateUUID())
 //email
+console.log(generators.generateEmail())

@@ -84,7 +84,16 @@ function generateUUID(){
     return uuid
 }
 function generateEmail(){
-    
+    let adjectives = require("../lists/adjectives.json")
+    let nouns = require("../lists/nouns.json")
+    let providers = require("../lists/emailProviders.json")
+    let domains = require("../lists/domains.json")
+    let word1 = adjectives[getRandomNumber(0, adjectives.length)]
+    let word2 = nouns[getRandomNumber(0, nouns.length)]
+    let word3 = providers[getRandomNumber(0, providers.length)]
+    let word4 = domains[getRandomNumber(0, domains.length)]
+
+    return `${word1}.${word2}@${word3}${word4}`
 }
 
 module.exports = {
@@ -95,5 +104,6 @@ module.exports = {
     generatePhone,
     generatePhoneDDD,
     generatePhoneDDI,
-    generateUUID
+    generateUUID,
+    generateEmail
 }
