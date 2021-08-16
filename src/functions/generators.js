@@ -83,6 +83,9 @@ function generateUUID(){
     let uuid = uuidv4()
     return uuid
 }
+function generateEmail(){
+    
+}
 
 module.exports = {
     generateDate,
