@@ -3,6 +3,11 @@ console.log('\x1b[36m%s\x1b[0m','*R U N N I N G*')
 
 //Functions that generate data
 const generators = require("./src/functions/generators.js")
+
+
+const fileWriter = require("./src/functions/fileWriter.js")
+
+fileWriter.writeFile(true, true, true, true, true, true, true, true, true, 5 )
 //Test Values
 
 //Date
@@ -23,3 +28,4 @@ console.log(generators.generatePhoneDDI())
 console.log(generators.generateUUID())
 //email
 console.log(generators.generateEmail())
+
